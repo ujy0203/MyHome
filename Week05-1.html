@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>상품 주문서</h2>
+    <form>
+        <fieldset>
+            <legend>개인정보</legend>
+            <ul>
+                <li>
+                    <label for = "name">주문자 이름</label>
+                    <input type = "text" name = "name">
+                </li>
+                <li>
+                    <label for = "tel">전화번호</label>
+                    <input type = "tel" name = "tel">
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>배송정보</legend>
+            <ul>
+                <li>배송 옵션 :
+                    <label><input type = "radio" name = "subject" value = "option">기존 배송지</label>
+                    <label><input type = "radio" name = "subject" value = "option2">새 배송지</label>
+                </li>
+                <li>
+                    <label for = "address">주소</label>
+                    <input type = "text" name = "address">
+                </li>
+                <li>요청사항
+                    <select name = "needs">
+                        <option value = "choice" selected>요청사항을 선택하세요.</option>
+                        <option value = "choice2">배송 전에 미리 연락바랍니다.</option>
+                        <option value = "choice3">부재시 연락바랍니다.</option>
+                        <option value = "choice4">부재시 경비실에 맡겨 주세요.</option>
+                    </select>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>주문 정보</legend>
+            상품<br>
+                <label><input type = "checkbox" name = "price" value = "price1">방울 토마토 1kg <s>10,000원</s> <b>8,000원</b></label>
+                <input type = "text" name = "price1">박스<br>
+                <label><input type = "checkbox" name = "price" value = "price2">방울 토마토 2kg <s>20,000원</s> <b>16,000원</b></label>
+                <input type = "text" name = "prcice2">박스<br>
+                <label><input type = "checkbox" name = "price" value = "price3">방울 토마토 3kg <s>30,000원</s> <b>24,000원</b></label>
+                <input type = "text" name = "price3">박스<br>
+                <label for = "needs2">기타사항</label>
+                <label><textarea rows = "5" cols = "50"></textarea></label>
+        </fieldset>
+        <fieldset>
+            <legend>결제 수단</legend>
+            <ul>
+                <li><label><input type = "radio" name = "subject" value = "account">계좌 이체</label></li>
+                <li><label><input type = "radio" name = "subject" value = "account2">카드 결제</label></li>
+                <li><label><input type = "radio" name = "subject" value = "account3">일반 결제</label></li>
+            </ul>
+        </fieldset>
+        <p><button type = "reset">초기화</button>
+        <button type = "submit">결제하기</button></p>
+    </form>
+</body>
+</html>
